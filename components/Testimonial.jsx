@@ -15,54 +15,96 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import Testimoni_1 from "@/public/Testimoni/testimoni_1.jpeg";
+import Testimoni_2 from "@/public/Testimoni/testimoni_2.jpeg";
+import Testimoni_3 from "@/public/Testimoni/testimoni_3.jpeg";
+import Testimoni_4 from "@/public/Testimoni/testimoni_4.jpg";
+import Testimoni_5 from "@/public/Testimoni/testimoni_5.jpeg";
+import Testimoni_6 from "@/public/Testimoni/testimoni_6.jpeg";
+import Testimoni_7 from "@/public/Testimoni/testimoni_7.jpeg";
+
+
 
 const reviewList = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: Testimoni_1.src,
+    name: "Ditra",
+    userName: "Executive muda",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Saya sangat puas dengan pelayanan yang diberikan oleh Natasae Studio sebagai konsultan arsitek. Mereka sangat responsif dalam menanggapi kebutuhan dan permintaan saya.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: Testimoni_2.src,
+    name: "Edy",
+    userName: "ASN",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "Natasae Studio memiliki tim yang sangat profesional dan berpengalaman. Mereka mampu menghasilkan desain arsitektur yang sesuai dengan visi dan gaya hidup saya.",
     rating: 4.8,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    image: Testimoni_3.src,
+    name: "Salsabila",
+    userName: "Wedding Organizer",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Proses kerja dengan Natasae Studio sangat efisien dan terstruktur. Mereka mampu mengatur jadwal dan anggaran proyek dengan baik sehingga proyek berjalan lancar.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    image: Testimoni_4.src,
+    name: "Henry",
+    userName: "Pengusaha",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Saya terkesan dengan kreativitas dan inovasi yang ditunjukkan oleh Natasae Studio dalam desain arsitektur. Mereka mampu menghadirkan solusi yang unik dan menarik.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    image: Testimoni_5.src,
+    name: "Mustika",
+    userName: "ASN",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "Natasae Studio memiliki kemampuan komunikasi yang baik. Mereka mendengarkan dengan teliti keinginan dan harapan saya, dan mengintegrasikannya ke dalam desain mereka.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    image: Testimoni_6.src,
+    name: "Nanda & Dian",
+    userName: "Pasangan Muda",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Saya merasa aman dan tenang bekerja dengan Natasae Studio. Mereka sangat memperhatikan detail dan kualitas dalam setiap aspek desain.",
+    rating: 4.9,
+  },
+  {
+    image: Testimoni_7.src,
+    name: "Nanjar",
+    userName: "Ibu Rumah Tangga",
+    comment:
+      "Natasae Studio memiliki jaringan yang luas dengan pemasok material terpercaya. Hal ini memudahkan proses pengadaan material proyek.",
+    rating: 4.9,
+  },
+  {
+    image: Testimoni_1.src,
+    name: "Ditra",
+    userName: "Executive Muda",
+    comment:
+      "Saya mendapatkan nilai tambah yang besar dari kerja sama dengan Natasae Studio. Mereka memberikan saran dan rekomendasi yang cerdas untuk meningkatkan nilai estetika dan fungsionalitas proyek.",
+    rating: 4.9,
+  },
+  {
+    image: Testimoni_2.src,
+    name: "Edy",
+    userName: "ASN",
+    comment:
+      "Natasae Studio tidak hanya menghasilkan desain yang indah, tetapi juga memperhatikan keberlanjutan dan ramah lingkungan. Mereka menerapkan solusi hijau dalam setiap proyek mereka.",
+    rating: 4.9,
+  },
+  {
+    image: Testimoni_3.src,
+    name: "Salsabilla",
+    userName: "Wedding Organizer",
+    comment:
+      "Saya sangat merekomendasikan Natasae Studio sebagai konsultan arsitek. Mereka adalah mitra yang handal dan dapat diandalkan untuk menciptakan ruang hidup yang memukau dan nyaman.",
     rating: 4.9,
   },
 ];
@@ -83,7 +125,13 @@ const TestimonialSection = () => {
       <Carousel
         opts={{
           align: "start",
+          loop: "true"
         }}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
         className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
       >
         <CarouselContent>

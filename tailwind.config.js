@@ -17,7 +17,10 @@ module.exports = {
   	extend: {
   		colors: {
   			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
+  			foreground: 'var(--foreground)',
+			feature: {
+				DEFAULT: '#242424'
+			},
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
