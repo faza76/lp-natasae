@@ -5,51 +5,51 @@ import { icons } from "lucide-react";
 const featureList = [
   {
     id: "01",
-    title: "Desain Interior",
+    title: "Fleksibilitas output desain",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Paket dapat dipilih sesuai kebutuhan client untuk menyesuaikan budget,",
   },
   {
     id: "02",
-    title: "Gambar Visual",
+    title: "Lifetime aftersales",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Layanan konsultasi online bersama natasae setelah proses design berlangsung hingga seumur hidup.",
   },
   {
     id: "03",
-    title: "Targeted Content",
+    title: "Mengedepankan Prinsip Vitruvius",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Mengoptimalkan desain terbaik susuai keinginan client tanpa mengesampingkan kaidah kaidah desain arsitektur dengan mengedepankan prinsip : Firmitas (Soliditas), Utilitas (Fungsi) dan Venustas (Keindahan). .",
   },
   {
     id: "04",
-    title: "Strong Visuals",
+    title: "Mengoptimalkan Budget",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Design Natasae di sesuaikan dengan kebutuhan dan budget yang di miliki klien yang bertujuan untuk merealisasikan design menjadi hunian/bangunan sesuai dengan perencanaan yang ada.",
   },
   {
     id: "05",
-    title: "Clear CTA",
+    title: "Garansi Realisasi Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Seluruh paket perencanaan di natasae di berikan Garansi perbaikan bila terdapat kesalahan dari kami terkait teknis pada perencanaan.",
   },
   {
     id: "06",
-    title: "Clear Headline",
+    title: "Design yang mengedepankan kebutuhan pengguna",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Proses design di awali dengan cerita tentang kebutuhan dan kebiasaan pengguna di dalam hunian yang di tuangkan ke dalam design dan di sesuaikan dengan keinginan dalam fungsi ruang pada hunian.",
   },
 ];
 
 const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+      <h2 className="text-lg italic text-primary text-center mb-2 tracking-wider">
+        Values
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Value yang di dapat dari natasae 
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">

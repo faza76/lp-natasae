@@ -3,19 +3,19 @@ import HeroImg from "@/public/image-hero.png";
 const Hero = () => {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat h-screen p-12 mx-8 overflow-visible"
+      className="relative bg-cover bg-center bg-no-repeat h-full p-12 mx-8 overflow-visible"
       style={{ backgroundImage: `url(${HeroImg.src})` }}
     >
       {/* Optional overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative grid grid-cols-3 gap-4">
-        <div className="col-span-2" /> {/* Empty column for layout */}
+        <div className="md:col-span-2" /> {/* Empty column for layout */}
 
         {/* Floating content */}
-        <div className="col-span-1 bg-feature p-6 shadow-lg z-10 relative -mt-20 overflow-visible">
+        <div className=" col-span-3 md:col-span-1 bg-primary-foreground p-6 shadow-lg z-10 relative -mt-20 overflow-visible">
           <div className="space-y-6">
-            <h1 className="text-white text-3xl font-bold">
+            <h1 className="text-primary text-3xl font-bold">
               MENGAPA HARUS NATASAE STUDIO
             </h1>
             <p className="text-white">

@@ -18,47 +18,62 @@ const PopularPlanType = {
 const pricingList = [
   {
     title: "Basic",
-    popular: PopularPlanType.NO,
-    price: 0,
+    popular: PopularPlanType.YES,
+    price: 70,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+    buttonText: "Konsultasi Sekarang",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Pra design",
+      "Denah,Tampak,Potongan",
+      "Skema Warna & Kode warna",
+      "Persfektif Interior",
+      "Persfektif Exterior",
     ],
   },
   {
-    title: "Premium",
+    title: "Middle",
     popular: PopularPlanType.YES,
-    price: 5,
+    price: 100,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+    buttonText: "Konsultasi Sekarang",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "*Include Semua di paket Basic",
+      "Rencana dan Detail pola lantai",
+      "Rencana Kusen Pintu Jendela",
+      "Rencana Detail Kusen pintu dan jendela",
+      "Rencana Ruang & Skema Furnitur",
+      "Rencana dan detail Pondasi",
+      "Rencana dan detail Kolom",
+      "Rencana dan detail Sloof & Balok",
+      "Rencana Stop Kontak & Saklar",
+      "Rencana Titik Lampu",
+      "Rencana dan detail Septick Tank",
+      "Rencana Anggaran Biaya (RAB ) Bangunan",
+      "Output Softfile",
     ],
   },
   {
     title: "Exclusive",
-    popular: PopularPlanType.NO,
-    price: 40,
+    popular: PopularPlanType.YES,
+    price: 170,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+    buttonText: "Konsultasi Sekarang",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "*Include Semua di paket Middle",
+      "Rencana dan Detail Toilet, Tangga, Prinsip, dan Atap",
+      "Notasi dan Ukuran Furnitur",
+      "Rencana Pelapis Lantai , Dinding, Atap",
+      "Daftar Merk, Kode Material Ex Setara",
+      "Rencana dan detail Plat Lantai",
+      "Rencana detail Tangga",
+      "Detail Pembesian",
+      "Rencana Air panas, air hujan dan RWH",
+      "Rencana Internet, CCTV dan AC",
+      "Rencana Anggaran Biaya (RAB ) Interior",
+      "Output Hardfile & Marchindise",
     ],
   },
 ];
@@ -67,12 +82,12 @@ const Pricing = () => {
   return (
     <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Pilihan 
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Paket Desain{" "}
         </span>
-        Access
+        Rumah
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis.
@@ -88,31 +103,33 @@ const Pricing = () => {
             }
           >
             <CardHeader className='relative'>
-              {/* <CardTitle className="flex item-center justify-between">
-                {pricing.title}
+              <CardTitle className="flex item-center justify-between">
+                {/* {pricing.title} */}
+                <div>
+                  <span className="text-3xl font-bold">{pricing.price}K</span>
+                  <span className="text-muted-foreground"> /meter²</span>
+                </div>
                 {pricing.popular === PopularPlanType.YES ? (
                   <Badge variant="secondary" className="text-sm text-primary">
-                    Most popular
+                    Penawaran Terbatas
                   </Badge>
                 ) : null}
-              </CardTitle> */}
+              </CardTitle>
               {/* <CardTitle className='text-center absolute -top-3 right-0 left-0'> */}
               <CardTitle className='flex justify-center item-center'>
                 <div className="bg-white absolute -top-3 px-4">
                     {pricing.title}
                 </div>
               </CardTitle>
-              <div>
+              {/* <div>
                 <span className="text-3xl font-bold">${pricing.price}</span>
                 <span className="text-muted-foreground"> /month</span>
-              </div>
+              </div> */}
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
-
             <CardContent>
               <Button className="w-full">{pricing.buttonText}</Button>
             </CardContent>
-
             <hr className="w-4/5 m-auto mb-4" />
 
             <CardFooter className="flex">

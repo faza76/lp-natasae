@@ -4,8 +4,8 @@ const ContentSection = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 bg-gray-100">
       <div className="md:w-1/2 mb-8 md:mb-0">
-        <h2 className="text-3xl font-bold mb-4">Your Title</h2>
-        <p className="text-lg text-gray-600">This is your description. You can provide details here about the content in this section.</p>
+        <h2 className="text-3xl font-bold mb-4">Bayangkan dan rasakan</h2>
+        <p className="text-lg text-gray-600">Dengan render animasi 3D, Anda bisa "melihat" bangunan Anda bahkan sebelum dimulai. Lihat bagaimana cahaya alami masuk melalui jendela, rasakan luasnya ruang, dan lihat setiap detail dari berbagai sudut—semuanya dalam pengalaman visual yang luar biasa. Tak ada kejutan, hanya keindahan yang terwujud.</p>
       </div>
       <div className="md:w-1/2 flex justify-center">
         <div className="relative w-full max-w-md">

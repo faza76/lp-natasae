@@ -72,11 +72,11 @@ import {
       <section id="faq" className="container md:w-[900px] py-24 sm:py-32">
         <div className="text-center mb-8">
           <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-            FAQS
+            F.A.Q
           </h2>
   
           <h2 className="text-3xl md:text-4xl text-center font-bold">
-            Common Questions
+            Pertanyaan yang sering diajukan
           </h2>
         </div>
   

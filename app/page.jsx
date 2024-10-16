@@ -8,6 +8,32 @@ import Pricing from "@/components/Pricing";
 import TestimonialSection from "@/components/Testimonial";
 import Image from "next/image";
 
+import preview from "@/public/image-hero.png"
+
+export const metadata = {
+  title: 'Natasae Studio',
+  description: 'Mari wujudkan cerita Anda melalui desain arsitektur',
+  openGraph: {
+    title: 'Natasae Studio',
+    description: 'Mari wujudkan cerita Anda melalui desain arsitektur',
+    url: 'https://natasaestudio.com',
+    images: [
+      {
+        url: preview.src,
+        width: 1200,
+        height: 630,
+        alt: 'Image description',
+      },
+    ],
+  },
+  twitter: {
+    card: 'Natasae Studio',
+    title: 'Natasae Studio',
+    description: 'Mari wujudkan cerita Anda melalui desain arsitektur',
+    images: [preview.src],
+  },
+};
+
 export default function Home() {
   return (
     <div>

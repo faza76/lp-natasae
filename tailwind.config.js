@@ -16,10 +16,15 @@ module.exports = {
   	},
   	extend: {
   		colors: {
+			primary: {
+				DEFAULT: "hsl(var(--primary))",
+				foreground: "hsl(var(--primary-foreground))",
+			},
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
 			feature: {
-				DEFAULT: '#242424'
+				// DEFAULT: '#242424'
+				DEFAULT: '#D2B48C'
 			},
   		},
   		borderRadius: {
